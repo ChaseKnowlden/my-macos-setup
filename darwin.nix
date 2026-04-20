@@ -29,6 +29,12 @@
       "hiddenbar"
       "stats"
       "itsycal"
+      "firefox@developer-edition"
+      "discord"
+      "figma"
+      "spotify"
+      "visual-studio-code"
+      "iterm2"
     ];
   };
 }

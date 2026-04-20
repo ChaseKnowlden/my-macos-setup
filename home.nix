@@ -6,7 +6,12 @@
   home.username = username;
 
   # Shell configuration (zsh example)
-  programs.zsh.enable = true;
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    syntaxHighlighting.enable = true;
+    autosuggestion.enable = true;
+  };
 
   # Git configuration
   programs.git = {
