@@ -26,6 +26,7 @@
       "raycast"
       "rectangle"
       "alt-tab"
+      "hiddenbar"
     ];
   };
 }
