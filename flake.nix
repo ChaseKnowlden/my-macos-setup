@@ -12,11 +12,11 @@
 
   # add the inputs declared above to the argument attribute set
   outputs = { self, nixpkgs, home-manager, darwin }: {
-    darwinConfigurations."Mac" = darwin.lib.darwinSystem {
+    darwinConfigurations."MacBook" = darwin.lib.darwinSystem {
       system = "aarch64-darwin";
       modules = [
         home-manager.darwinModules.home-manager
-        ./hosts/Mac/default.nix 
+        ./hosts/MacBook/default.nix 
       ];
     };
   };
