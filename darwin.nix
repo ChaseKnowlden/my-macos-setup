@@ -27,6 +27,7 @@
       "rectangle"
       "alt-tab"
       "hiddenbar"
+      "stats"
     ];
   };
 }
