@@ -28,6 +28,7 @@
       "alt-tab"
       "hiddenbar"
       "stats"
+      "itsycal"
     ];
   };
 }
