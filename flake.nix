@@ -20,13 +20,11 @@
 
   outputs = inputs@{ self, nix-darwin, nixpkgs, home-manager, ... }:
     let
-      # === CHANGE THESE TO MATCH YOUR SYSTEM ===
       system = "aarch64-darwin";          # Use "x86_64-darwin" for Intel Macs
       hostname = "MacBook";            # Run `scutil --get LocalHostName` to get yours
       username = "chase";          # Your macOS username (check with `whoami`)
-      # =========================================
 
-      specialArgs = { inherit inputs; };
+      specialArgs = { inherit inputs username; };
 
       darwinConfiguration = nix-darwin.lib.darwinSystem {
         inherit system specialArgs;

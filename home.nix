@@ -1,10 +1,9 @@
-{ pkgs, ... }:
+{ pkgs, username, ... }:
 
 {
   home.stateVersion = "25.11";  # Or current year
 
-  home.username = "chase";  # Change to match above
-  home.homeDirectory = "/Users/chase";
+  home.username = username;
 
   # Shell configuration (zsh example)
   programs.zsh.enable = true;
